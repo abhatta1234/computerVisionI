@@ -13,7 +13,8 @@ The experimental pipeline for this project is:
 
 The major pre-processing required here is to blur the specific part of the image and repeat the experimental steps mentioned above repeatedly for each different parts. To blur the specific part, the presented needs to parsed into different parts. To perform semantic segmentation, BiSeNet was used and the paper can be accessed using this [link](https://arxiv.org/abs/1808.00897). The following image is used for the illustration of the segmentation:
 
-![423383_01F31](https://user-images.githubusercontent.com/40056517/137397604-00c45876-fe4e-4f1f-9c31-a0231284014e.JPG) <br ><br >
+<img width="506" alt="Screen Shot 2021-10-15 at 4 03 06 PM" src="https://user-images.githubusercontent.com/40056517/137547027-76901ff1-d575-45a3-8331-186a23b60c0c.png"> <br > <br >
+
 Bilateral Segmentation network, a deep-learning based framework, ingeniously uses a context path and spatial path to parse/annotate different parts of the face. Some of the parts of the face that are parsed are left & right eyes, left & right ears, nose, skin, hair, hat and so on. All the parts that are parsed are displayed using different colors. One of the sample results is shown below:
 
 ![BiseNet Result](https://user-images.githubusercontent.com/40056517/137433274-70e43f2d-c2d5-4851-af88-785c75a6a219.png) <br ><br >
