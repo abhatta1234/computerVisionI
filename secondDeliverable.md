@@ -20,15 +20,21 @@ Bilateral Segmentation network, a deep-learning based framework, ingeniously use
 
 Now, for the purpose of illustration - the pixel associated with just nose using the BiSeNet network is shown below:
 
-![423383_01F31_color_mask](https://user-images.githubusercontent.com/40056517/137429053-5d781713-d363-4d84-8ba3-1d7bac5f23e5.png)
+![423383_01F31_color_mask](https://user-images.githubusercontent.com/40056517/137429053-5d781713-d363-4d84-8ba3-1d7bac5f23e5.png) <br ><br >
 
+Now, the mask needs to be created from this segmentation. To do all, all pixel values labeled as nose are given the value of 255 and all remaining pixels are given the value of 0. The mask created using such operation is shown as follows:
 
-![checkAnno](https://user-images.githubusercontent.com/40056517/137429036-c6542d93-8010-4b4e-9281-769397a56ace.png) 
+![checkAnno](https://user-images.githubusercontent.com/40056517/137429036-c6542d93-8010-4b4e-9281-769397a56ace.png) <br ><br >
 
-
-
-
-
-
+Using the mask above, the blurring operation was applied on the face to obtain just the image of the nose with everything else blurred. The original image, annotation and the blurred image is shown below:
 
 <img width="566" alt="Screen Shot 2021-10-14 at 10 28 56 PM" src="https://user-images.githubusercontent.com/40056517/137429071-bcb5c40a-162e-4edf-ad84-24bd3f0d635d.png">
+
+# Future Steps
+
+For the remaining part of the project, the following steps needs to be taken
+- Blur one specific part (eyes, nose, ears, skin, hair, etc) for all images in the dataset
+- Use ArcFace model to get the feature vector representation
+- Compare the feature vector representation
+- Plot genuine and impostor distribution to observe any patter
+- Repeat the experiment for another major part
