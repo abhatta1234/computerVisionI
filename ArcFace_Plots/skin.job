@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#$ -m abe
+#$ -pe smp 4
+#$ -q gpu
+#$ -l gpu_card=1
+#$ -M abhatta@nd.edu
+#$ -N skin_Feature_Extraction
+
+module load pytorch
+
+python3 insightface_feature_extraction.py -s ../blurresults/blurImg/blurred_skin -d ../blurresults/features/blurred_skin/

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#$ -m abe
+#$ -o /afs/crc.nd.edu/user/a/abhatta/log/
+#$ -pe smp 4
+#$ -q gpu
+#$ -l gpu_card=1
+#$ -M abhatta@nd.edu
+#$ -N Blur_Image_Generation
+module load pytorch
+
+python3 multiple_parts.py -s ../curatedMORPHsubsets/CF/ -m ../blurresults/CF/mask/ -d ../blurresults/CF/blurImg/
+python3 multiple_parts.py -s ../curatedMORPHsubsets/AAM/ -m ../blurresults/AAM/mask/ -d ../blurresults/AAM/blurImg/
+python3 multiple_parts.py -s ../curatedMORPHsubsets/AAF/ -m ../blurresults/AAF/mask/ -d ../blurresults/AAF/blurImg/
