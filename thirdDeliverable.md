@@ -32,7 +32,7 @@ This section shows sample blurring on one of the male images. Similar such blurr
 
 # Results 
 
-After the images with blurred parts were obtained for the caucasian male dataset, the face-feature vector representation were obtained using ArcFace. The cosine similarity scores between genuine and impostor pairs were calculated 
+After the images with blurred parts were obtained for the caucasian male dataset, the face-feature vector representation were obtained using ArcFace. The cosine similarity scores between genuine and impostor pairs were calculated. The impostor and genuine distribution plots were obtained using these similarity scores for each parts blurred. The results are shown below:
 
 | Blurred Eye | Blurred Brows | Blurred Eye w/ Brows |
 | --- | --- | --- |
@@ -45,3 +45,9 @@ After the images with blurred parts were obtained for the caucasian male dataset
 | Blurred Skin | 
 | --- |
 | <img src="/Plots/results/blurredskin.png" width="300"/>| 
+
+# Interpretation
+
+The general interpretation(not part specific) interpretation from the all of the plots shown above is that the blurring operation doesn't affect similarity score between two genuine pairs. It is most likely because the blurring operation is consistent across all genuine pairs and even after blurring they are more or like same. The blurring affects the impostor comparison because blurring essentially takes away additional feature to compare impostor pairs with and this causes increas in false match rate.<br><br>
+
+Since, genuine distribution for images with blurred parts are more or like same to the original images, the new obtained d-prime scores for impostor distribution can be used as a metric to decide what part is most important in face recognition.**Regarding the part specific genuine and impostor comparison, from all the figures shown above - eyes with eyesbrows seems to be the most important region and mouth with lips regions seems to be least important region to distinguish between two impostor pairs.** The detailed analysis and comparison for all the parts across different ethnic groups will be provided in the final report.
