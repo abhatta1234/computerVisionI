@@ -12,9 +12,36 @@ Out of several face pre-trained face segmentation network available, BiSeNet was
 
 # Blurring Operation
 
-The blurring operation was done using the mask obtained from BiSeNet. It is well known in deep learning community that the sharp gradient can deteriorate the performance of these neural network, most probably because of treating these sharp gradient as an additional feature. In order to avoid, such sharp gradient in the boundaries where blurring mask is applied, gaussian filtering was applied to the mask before applying it to the face. Additionally, to make this blending even more smoother, dilation was performed on the mask obtained from BiSeNet. The rate of dilation applied was inversely propotional to the size of the part. For eg: since, eyes are comparatively smaller than nose - a larger dilation was applied on eyes to obtain smoother gradient blending in the boundary regions. **Some of the sample dilations of the mask and blurring can be seen here.**
+The blurring operation was done using the mask obtained from BiSeNet. It is well known in deep learning community that the sharp gradient can deteriorate the performance of these neural network, most probably because of treating these sharp gradient as an additional feature. In order to avoid, such sharp gradient in the boundaries where blurring mask is applied, gaussian filtering was applied to the mask before applying it to the face. Additionally, to make this blending even more smoother, dilation was performed on the mask obtained from BiSeNet. The rate of dilation applied was inversely propotional to the size of the part. For eg: since, eyes are comparatively smaller than nose - a larger dilation was applied on eyes to obtain smoother gradient blending in the boundary regions. **Some of the sample dilations of the mask using hand-crafted kernel and blurring of the part can be seen here.**
 
 # Sample Blurs for Caucasian Male
 
+This section shows sample blurring on one of the male images. Similar such blurring operations were applied on 31,706 images of Caucasian males to report the results presented in this part of the project. 
 
+| Blurred Eye | Blurred Brows | Blurred Eye w/ Brows |
+| --- | --- | --- |
+| <img src="/Plots/eyes.JPG" width="300"/> | <img src="/Plots/brows.JPG" width="300"/> | <img src="/Plots/eyeswbrows.JPG" width="300"/> |
 
+| Blurred Mouth w/ Lips | Blurred Nose | Blurred Hair |
+| --- | --- | --- |
+| <img src="/Plots/mouthwlips.JPG" width="300"/>| <img src="/Plots/nose.JPG" width="300"/>| <img src="/Plots/hair.JPG" width="300"/> |
+
+| Blurred Skin | 
+| --- |
+| <img src="/Plots/skin.JPG" width="300"/>| 
+
+# Results 
+
+After the images with blurred parts were obtained for the caucasian male dataset, the face-feature vector representation were obtained using ArcFace. The cosine similarity scores between genuine and impostor pairs were calculated 
+
+| Blurred Eye | Blurred Brows | Blurred Eye w/ Brows |
+| --- | --- | --- |
+| <img src="/Plots/results/blurredeyes.png" width="400"/> | <img src="/Plots/results/blurredbrows.png" width="400"/> | <img src="/Plots/results/blurredeyeswbrows.png" width="400"/> |
+
+| Blurred Mouth w/ Lips | Blurred Nose | Blurred Hair |
+| --- | --- | --- |
+| <img src="/Plots/results/blurredlips.png" width="400"/>| <img src="/Plots/results/blurrednose.png" width="400"/>| <img src="/Plots/results/blurredhair.png" width="400"/> |
+
+| Blurred Skin | 
+| --- |
+| <img src="/Plots/results/blurredskin.png" width="300"/>| 
