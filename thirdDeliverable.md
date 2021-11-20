@@ -17,9 +17,4 @@ The blurring operation was done using the mask obtained from BiSeNet. It is well
 # Sample Blurs for Caucasian Male
 
 
-<p float="left">
-  <img src="/img1.png" width="100" />
-  <img src="/img2.png" width="100" /> 
-  <img src="/img3.png" width="100" />
-</p>
 
