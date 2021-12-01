@@ -25,21 +25,28 @@ Out of several face pre-trained face segmentation network available, ArcFace was
 
 The blurring operation was done using the mask obtained from BiSeNet. It is well known in deep learning community that the sharp gradient can deteriorate the performance of these neural network, most probably because of treating these sharp gradient as an additional feature. In order to avoid, such sharp gradient in the boundaries where blurring mask is applied, gaussian filtering was applied to the mask before applying it to the face. Additionally, to make this blending even more smoother, dilation was performed on the mask obtained from BiSeNet. The rate of dilation applied was inversely propotional to the size of the part. For eg: since, eyes are comparatively smaller than nose - a larger dilation was applied on eyes to obtain smoother gradient blending in the boundary regions. This [jupyter kernel](/blurring_operation_demo.ipynb), included in this github repo, shows the sample of hand-crafted dilated kernel selection for different parts and demo displays of mask, dilated mask, gaussian blurred dilated mask, and image with blurred part.
 
-# Sample Blurs for Caucasian Male
+# Final Distribution Plots
 
 This section shows sample blurring on one of the male images. Similar such blurring operations were applied on 31,706 images of Caucasian males to report the results presented in this part of the project. 
 
-| Blurred Eye | Blurred Brows | Blurred Eye w/ Brows |
-| --- | --- | --- |
-| <img src="/Plots/eyes.JPG" width="300"/> | <img src="/Plots/brows.JPG" width="300"/> | <img src="/Plots/eyeswbrows.JPG" width="300"/> |
+<table>
+    <tr><th colspan=2>Genuine and Impostor Distribution for Blurred Eyes</th></tr>
+  <tr><td align="center">Caucasian Male</td><td align="center">African-American Male</td></tr>
+    <tr><td><img src="/blurPlots/CM/distributionplots/blurredeyes.png" width="600"/></td><td><img src="/blurPlots/AAM/distributionplots/blurred_eyes.png" width="600"/></tr>
+  <tr><td align="center">Caucasian Female</td><td align="center">African-American Female</td></tr>
+  <tr><td><img src="/blurPlots/CF/distributionplots/blurred_eyes.png" width="600"/></td><td><img src="blurPlots/AAF/distributionPlots/blurred_eyes.png" width="600"/></td></tr>
+</table>
 
-| Blurred Mouth w/ Lips | Blurred Nose | Blurred Hair |
-| --- | --- | --- |
-| <img src="/Plots/mouthwlips.JPG" width="300"/>| <img src="/Plots/nose.JPG" width="300"/>| <img src="/Plots/hair.JPG" width="300"/> |
+<table>
+    <tr><th colspan=4>Logical Operators</th></tr>
+    <tr><td><img src="/Plots/mouthwlips.JPG" width="300" height="400"/></td><td><img src="/Plots/mouthwlips.JPG" width="300"/></td><td><img src="/Plots/mouthwlips.JPG" width="300"/></td><td><img src="/Plots/mouthwlips.JPG" width="300"/></td></tr>
+</table>
 
-| Blurred Skin | 
-| --- |
-| <img src="/Plots/skin.JPG" width="300"/>| 
+<table>
+    <tr><th colspan=4>Logical Operators</th></tr>
+    <tr><td><img src="/Plots/mouthwlips.JPG" width="300"/></td><td><img src="/Plots/mouthwlips.JPG" width="300"/></td><td><img src="/Plots/mouthwlips.JPG" width="300"/></td><td><img src="/Plots/mouthwlips.JPG" width="300"/></td></tr>
+</table>
+
 
 # Results 
 
