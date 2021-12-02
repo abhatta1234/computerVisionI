@@ -3,14 +3,11 @@
 <table>
     <tr><th colspan=2> Genuine and Impostor Distribution Plots with Original Images, Blurred Images and Cross-matched Images </th></tr>
   <tr><td align="center">Eyes</td><td align="center">Brows</td></tr>
-    <tr><td><img src="/blurPlots/CMcrossmatch/distributionplots/crossmatch_eyes.png" width="600"/></td><td><img src="/blurPlots/CMcrossmatch/distributionplots/crossmatch_brows.png"/></tr>
+    <tr><td><img src="/blurPlots/CMcrossmatch/distributionplots/crossmatch_eyes.png" width="600"/></td><td><img src="/blurPlots/CMcrossmatch/distributionplots/crossmatch_brows.png" width="600"/></tr>
   <tr><td align="center">Eyes with Brows</td><td align="center">Nose</td></tr>
-  <tr><td><img src="/blurPlots/CMcrossmatch/distributionplots/crossmatch_eyeswbrows.png" width="600"/></td><td><img src="/blurPlots/CMcrossmatch/distributionplots/crossmatch_nose.png" width="600"/></td></tr>
+  <tr><td><img src="/blurPlots/CMcrossmatch/distributionplots/crossmatch_mouthwlips.png" width="600"/></td><td><img src="/blurPlots/CMcrossmatch/distributionplots/crossmatch_nose.png" width="600"/></td></tr>
     <tr><td align="center">Mouth Region</td><td align="center">Hair</td></tr>
-  <tr><td><img src="/blurPlots/CMcrossmatch/distributionplots/crossmatch_lips.png" width="600"/></td><td><img src="/blurPlots/CMcrossmatch/distributionplots/crossmatch_hair.png" width="600"/></td></tr>
-    <tr><td align="center">Skin</td></tr>
-    <tr><td><img src="/blurPlots/CMcrossmatch/distributionplots/crossmatch_skin.png" width="600"/></td></tr>
-    
+  <tr><td><img src="/blurPlots/CMcrossmatch/distributionplots/crossmatch_skin.png" width="600"/></td><td><img src="/blurPlots/CMcrossmatch/distributionplots/crossmatch_hair.png" width="600"/></td></tr>
 </table>
 <br><br>
 
