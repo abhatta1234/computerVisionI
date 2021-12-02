@@ -1,3 +1,15 @@
+# Demonstration of how much blurring changes the genuine plots
+
+<table>
+    <tr><th colspan=2> Genuine and Impostor Distribution Plots with Original Images, Blurred Images and Cross-matched Images </th></tr>
+  <tr><td align="center">Caucasian Male</td><td align="center">African-American Male</td></tr>
+    <tr><td><img src="/blurPlots/CM/distributionplots/blurred_eyes.png" width="600"/></td><td><img src="/blurPlots/AAM/distributionplots/blurred_eyes.png" width="600"/></tr>
+  <tr><td align="center">Caucasian Female</td><td align="center">African-American Female</td></tr>
+  <tr><td><img src="/blurPlots/CF/distributionplots/blurred_eyes.png" width="600"/></td><td><img src="/blurPlots/AAF/distributionplots/blurred_eyes.png" width="600"/></td></tr>
+</table>
+<br><br>
+
+
 # Final Distribution Plots
 
 This section summarizes all the plots for 4 ethnic groups, with one of the seven selected major parts blurred. 
