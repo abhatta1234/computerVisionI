@@ -1,0 +1,1 @@
+-a1 ../../blurExpResults/male/match/CM/CM_authentic.npy -i1 ../../blurExpResults/male/match/CM/CM_impostor.npy -l1 CM -a2 ../../blurresults/match/
