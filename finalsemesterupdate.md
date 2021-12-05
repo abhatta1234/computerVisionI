@@ -17,8 +17,7 @@ This section is intended to verify if the feature extractor that is being used i
 
 # Final Distribution Plots
 
-This section is intended to show the genuine and impostor distribution plots
-This section summarizes all the plots for 4 ethnic groups, with one of the seven selected major parts blurred. 
+This section is intended to show the genuine and impostor distribution plots, with one of the seven major parts blurred. This section summarizes all the plots for 4 ethnic categories (Caucasian Male, Caucasian Female, African-American Male and African-American Female), with seven parts ( Nose, Eyes, Brows, Eyes with brows, Mouth Region, Skin and Hair).
 
 <table>
     <tr><th colspan=2> Genuine and Impostor Distribution for Blurred Eyes </th></tr>
@@ -82,5 +81,19 @@ This section summarizes all the plots for 4 ethnic groups, with one of the seven
   <tr><td><img src="/blurPlots/CF/distributionplots/blurred_skin.png" width="600"/></td><td><img src="/blurPlots/AAF/distributionplots/blurred_skin.png" width="600"/></td></tr>
 </table>
 <br><br>
+
+# Results and Discussion
+
+One of the major finding of this project is that the importance of a specific part is more or less ethnicity agnostic. For eg: nose is more or less equally important for all ethnic categories considered. In other words, nose is not more important of a facial feature for AAM and less for CM and so on. This is a conclusion from the general pattern seen in the plot. For future work, results from a more rigid statistical measure can be reported to prove this. 
+<br><br>
+The second major finding from this work is that, the importance of facial parts is not directly propotional to number of pixels. From the above plots, it can be seen that impostor distribution shifts to a higher score(more similar), more or less the same when blurring is done for nose, eyeswbrows and whole skin(all face except nose, eyebrows, ear, mouth and hair). This simply indicates that more pixels(associated with face) doesn't neccessarily mean more information. From this experiment, it can be concluded that - Eye Socket Region(Eyes with Brows) and Nose are the most salient region for face recognition system. 
+
+# Future Work
+
+- Repeat this work with ResNet based model with a different loss function
+- Repeat this work with a different dataset
+
+
+
 
 
