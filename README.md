@@ -1,2 +1,7 @@
-# computerVisionI
-This repository is for all assignment related to Computer Vision class for Fall 2021 at the University of Notre Dame
+# Genuine and Impostor Distribution with Face Part Blurring
+
+# BiSeNet Segmentation
+# Feature Extraction
+# Feature Matching
+# Plots
+
