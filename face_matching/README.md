@@ -1,6 +1,6 @@
 # Face Matching Repository
 
-## Extract features with any of the following:
+## Extract features with any of the following-
 - vggface_feature_extraction
 - facenet_feature_extraction
 - lbp_feature_extraction
