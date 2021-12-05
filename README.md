@@ -1,4 +1,5 @@
 # Genuine and Impostor Distribution with Face Part Blurring
+To complete : Needs insighface repo, face_parsing_BiseNet repo
 
 # BiSeNet Segmentation
 
@@ -80,5 +81,5 @@ python3 ./face_matching/Plots/plot_relative_freq_histogram_v2.py -a1 ../authenti
 
 The dataset used in this project can be found below:
 
-Curated MORPH Subset
+[Curated MORPH Subset](https://drive.google.com/drive/folders/1BxMBhLNl82rzaw-xX3-SCCw9ivsHB9hr?usp=sharing)
 
