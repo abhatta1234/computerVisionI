@@ -1,5 +1,9 @@
 # Demonstration of how much blurring changes the genuine plots
 
+This section is intended to verify if the feature extractor that is being used in the project is a good one or not. 
+
+
+
 <table>
     <tr><th colspan=2> Genuine and Impostor Distribution Plots with Original Images, Blurred Images and Cross-matched Images </th></tr>
   <tr><td align="center">Eyes</td><td align="center">Brows</td></tr>
