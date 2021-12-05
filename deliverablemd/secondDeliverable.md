@@ -27,9 +27,6 @@ Now, the mask needs to be created from this segmentation. To do all, all pixel v
 
 ![checkAnno](https://user-images.githubusercontent.com/40056517/137429036-c6542d93-8010-4b4e-9281-769397a56ace.png) <br ><br >
 
-Using the mask above, the blurring operation was applied on the face to obtain just the image of the nose with everything else blurred. The original image, annotation and the blurred image is shown below:
-
-<img width="566" alt="Screen Shot 2021-10-14 at 10 28 56 PM" src="https://user-images.githubusercontent.com/40056517/137429071-bcb5c40a-162e-4edf-ad84-24bd3f0d635d.png">
 
 # Future Steps
 
