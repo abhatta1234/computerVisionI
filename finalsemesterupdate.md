@@ -1,6 +1,6 @@
 # Demonstration of how much blurring changes the genuine plots
 
-This section is intended to verify if the feature extractor that is being used in the project is a good one or not. In this project, feature extractor used in ResNet based model, trained with Additive Angular Margin Loss, as proposed by ArcFace[]. This proposed approach not only maximizes inter-class distance, but also minimizes intra-class distance. So, in the context of this experiment, if comparison is made between image of a subject with one of the face part blurred with the original image of a subject, it will have a lower similarity score, because the representation will get spread out more as compared to the instance where both were originals. But, if comparison is made between image of a subject with one of the face part blurred with original face of another subject, there should be more or less the same difference as compared to if both originals were used, because ideally the interclass distance doesn't vary by that much - if we think about representation in 512-d space. This pattern holds in the following plots and thus, it can be said that the feature extractor is doing a great job.
+This section is intended to verify if the feature extractor that is being used in the project is a good one or not. In this project, feature extractor used in ResNet based model, trained with Additive Angular Margin Loss, as proposed by ArcFace[1]. This proposed approach not only maximizes inter-class distance, but also minimizes intra-class distance. So, in the context of this experiment, if comparison is made between image of a subject with one of the face part blurred with the original image of a subject, it will have a lower similarity score, because the representation will get spread out more as compared to the instance where both were originals. But, if comparison is made between image of a subject with one of the face part blurred with original face of another subject, there should be more or less the same difference as compared to if both originals were used, because ideally the interclass distance doesn't vary by that much - if we think about representation in 512-d space. This pattern holds in the following plots and thus, it can be said that the feature extractor is doing a great job.
 
 
 <table>
@@ -26,8 +26,8 @@ This section is intended to show the genuine and impostor distribution plots, wi
   <tr><td align="center">Caucasian Female</td><td align="center">African-American Female</td></tr>
   <tr><td><img src="/blurPlots/CF/distributionplots/blurred_eyes.png" width="600"/></td><td><img src="/blurPlots/AAF/distributionplots/blurred_eyes.png" width="600"/></td></tr>
 </table>
-<br><br>
-
+<br>
+The plot above shows that blurring eye makes the shift in impostor roughly same in between ethnicity i.e almost similar for both genders in caucasian group and the same for African-American group. Similarly, genuine distribution is slightly worse for African-American group , whereas almost intact for Caucasian group. <br><br><br>
 <table>
     <tr><th colspan=2>Genuine and Impostor Distribution for Blurred Brows</th></tr>
   <tr><td align="center">Caucasian Male</td><td align="center">African-American Male</td></tr>
@@ -35,8 +35,8 @@ This section is intended to show the genuine and impostor distribution plots, wi
   <tr><td align="center">Caucasian Female</td><td align="center">African-American Female</td></tr>
   <tr><td><img src="/blurPlots/CF/distributionplots/blurred_brows.png" width="600"/></td><td><img src="/blurPlots/AAF/distributionplots/blurred_brows.png" width="600"/></td></tr>
 </table>
-<br><br>
-
+<br>
+The impostor distribution results for brows different in sense that there is slightly greater shift for African-American group as Caucasian. Similarly, genuine distribution is almost intact, except for slight  <br><br><br>
 <table>
     <tr><th colspan=2>Genuine and Impostor Distribution for Blurred Eyeswbrows</th></tr>
   <tr><td align="center">Caucasian Male</td><td align="center">African-American Male</td></tr>
@@ -44,8 +44,8 @@ This section is intended to show the genuine and impostor distribution plots, wi
   <tr><td align="center">Caucasian Female</td><td align="center">African-American Female</td></tr>
   <tr><td><img src="/blurPlots/CF/distributionplots/blurred_eyeswbrows.png" width="600"/></td><td><img src="/blurPlots/AAF/distributionplots/blurred_eyeswbrows.png" width="600"/></td></tr>
 </table>
-<br><br>
-
+<br>
+The plot above shows that blurring eye-socket region(eyes with brows) makes the shift in impostor roughly same, while leaving genuine distribution almost intact for all ethnic categories i.e Caucasian Male, Caucasina Female, African-American Male and African-American Female. <br><br><br>
 <table>
     <tr><th colspan=2>Genuine and Impostor Distribution for Blurred Nose</th></tr>
   <tr><td align="center">Caucasian Male</td><td align="center">African-American Male</td></tr>
@@ -53,8 +53,8 @@ This section is intended to show the genuine and impostor distribution plots, wi
   <tr><td align="center">Caucasian Female</td><td align="center">African-American Female</td></tr>
   <tr><td><img src="/blurPlots/CF/distributionplots/blurred_nose.png" width="600"/></td><td><img src="/blurPlots/AAF/distributionplots/blurred_nose.png" width="600"/></td></tr>
 </table>
-<br><br>
-
+<br>
+The plot above shows that blurring nose makes the shift in impostor roughly same, while leaving genuine distribution almost intact for all ethnic categories i.e Caucasian Male, Caucasina Female, African-American Male and African-American Female. <br><br><br>
 <table>
     <tr><th colspan=2>Genuine and Impostor Distribution for Blurred Mouth Region</th></tr>
   <tr><td align="center">Caucasian Male</td><td align="center">African-American Male</td></tr>
@@ -62,8 +62,8 @@ This section is intended to show the genuine and impostor distribution plots, wi
   <tr><td align="center">Caucasian Female</td><td align="center">African-American Female</td></tr>
   <tr><td><img src="/blurPlots/CF/distributionplots/blurred_mouthwlips.png" width="600"/></td><td><img src="/blurPlots/AAF/distributionplots/blurred_mouthwlips.png" width="600"/></td></tr>
 </table>
-<br><br>
-
+<br>
+The plot above shows that blurring mouth region(mouth and lips) makes the shift in impostor roughly same, while leaving genuine distribution almost intact for all ethnic categories i.e Caucasian Male, Caucasina Female, African-American Male and African-American Female. <br><br><br>
 <table>
     <tr><th colspan=2>Genuine and Impostor Distribution for Blurred Hair</th></tr>
   <tr><td align="center">Caucasian Male</td><td align="center">African-American Male</td></tr>
@@ -71,8 +71,8 @@ This section is intended to show the genuine and impostor distribution plots, wi
   <tr><td align="center">Caucasian Female</td><td align="center">African-American Female</td></tr>
   <tr><td><img src="/blurPlots/CF/distributionplots/blurred_hair.png" width="600"/></td><td><img src="/blurPlots/AAF/distributionplots/blurred_hair.png" width="600"/></td></tr>
 </table>
-<br><br>
-
+<br>
+The plot above shows that blurring hair makes the shift in impostor roughly same, while leaving genuine distribution almost intact for all ethnic categories i.e Caucasian Male, Caucasina Female, African-American Male and African-American Female. <br><br><br>
 <table>
     <tr><th colspan=2>Genuine and Impostor Distribution for Blurred Skin</th></tr>
   <tr><td align="center">Caucasian Male</td><td align="center">African-American Male</td></tr>
@@ -80,20 +80,24 @@ This section is intended to show the genuine and impostor distribution plots, wi
   <tr><td align="center">Caucasian Female</td><td align="center">African-American Female</td></tr>
   <tr><td><img src="/blurPlots/CF/distributionplots/blurred_skin.png" width="600"/></td><td><img src="/blurPlots/AAF/distributionplots/blurred_skin.png" width="600"/></td></tr>
 </table>
-<br><br>
+<br>
+The plot above shows that blurring skin(all face expect nose,mouth,brows and eyes) makes the shift in impostor roughly same, while leaving genuine distribution almost intact for all ethnic categories i.e Caucasian Male, Caucasina Female, African-American Male and African-American Female. <br><br>
 
 # Results and Discussion
 
-One of the major finding of this project is that the importance of a specific part is more or less ethnicity agnostic. For eg: nose is more or less equally important for all ethnic categories considered. In other words, nose is not more important of a facial feature for AAM and less for CM and so on. This is a conclusion from the general pattern seen in the plot. For future work, results from a more rigid statistical measure can be reported to prove this. 
+One of the major finding of this project is that the importance of a specific part is more or less ethnicity agnostic. For eg: nose is more or less equally important for all ethnic categories considered. In other words, nose is not more important of a facial feature for AAM and less for CM and so on. There was some deviation observed for brows and eyes, but it is not greatly significant. This finding allows to come up with a general conclusion about which part of the face is more important for face recognition, for all ethnic categories namely Caucasian Male, Caucasian Female, African-American Male and African-American Female, that were taken into consideration for this project. 
 <br><br>
-The second major finding from this work is that, the importance of facial parts is not directly propotional to number of pixels. From the above plots, it can be seen that impostor distribution shifts to a higher score(more similar), more or less the same when blurring is done for nose, eyeswbrows and whole skin(all face except nose, eyebrows, ear, mouth and hair). This simply indicates that more pixels(associated with face) doesn't neccessarily mean more information. From this experiment, it can be concluded that - Eye Socket Region(Eyes with Brows) and Nose are the most salient region for face recognition system. 
+The second major finding from this work is that, the importance of facial parts is not directly propotional to number of pixels. From the above plots, it can be seen that impostor distribution shifts to a higher score(more similar), more or less the same when blurring is done for nose, eyes with brows and whole skin(all face except nose, eyebrows, ear, mouth and hair). This simply indicates that more pixels(associated with face) doesn't neccessarily mean more information. From this experiment, it can be concluded that - Eye Socket Region(Eyes with Brows) and Nose are the most salient region for face recognition system. 
+<br><br>
 
 # Future Work
 
 - Repeat this work with ResNet based model with a different loss function
 - Repeat this work with a different dataset
 
+# References
 
+1) Deng, J., Guo, J., Xue, N., & Zafeiriou, S. (2019). Arcface: Additive angular margin loss for deep face recognition. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 4690-4699).
 
 
 
