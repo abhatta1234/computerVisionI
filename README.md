@@ -1,9 +1,14 @@
 # Genuine and Impostor Distribution with Face Part Blurring
-To complete : Needs insighface repo, face_parsing_BiseNet repo
+
+All the code repos required to reproduced this results are put in a google drive link in the section below:
+
+[Google Drive Link For All Repos](https://drive.google.com/drive/folders/1BxMBhLNl82rzaw-xX3-SCCw9ivsHB9hr?usp=sharing)
+
+**Note: Make Sure that all the repos - insightface, face_parsing_BiSeNet and face_matching are at the same directory level.**
 
 # BiSeNet Segmentation
 
-In this project, modified version of BiSeNet Segmentation was used. The orginal implementation of this modified version can be found [here](https://github.com/zllrunning/face-parsing.PyTorch). The most relevant python files for this project are:
+In this project, modified version of BiSeNet Segmentation was used. The orginal implementation of this modified version can be found [here](https://github.com/zllrunning/face-parsing.PyTorch). The most relevant python files are put in folder "face_parsing_BiSeNet" and are:<br>
 - create_mask.py
 - create_blur_part.py
 - multiple_parts.py
@@ -83,10 +88,6 @@ The dataset used in this project can be found below:
 
 [Curated MORPH Subset](https://drive.google.com/drive/folders/1BxMBhLNl82rzaw-xX3-SCCw9ivsHB9hr?usp=sharing)
 
-# Pretrained Models Used
 
-All the pretrained models used for this project can be found below:
-
-[Curated MORPH Subset](https://drive.google.com/drive/folders/1BxMBhLNl82rzaw-xX3-SCCw9ivsHB9hr?usp=sharing)
 
 
