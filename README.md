@@ -84,9 +84,7 @@ python3 ./face_matching/Plots/plot_relative_freq_histogram_v2.py -a1 ../authenti
 
 # Dataset
 
-The dataset used in this project can be found below:
-
-[Curated MORPH Subset](https://drive.google.com/drive/folders/1BxMBhLNl82rzaw-xX3-SCCw9ivsHB9hr?usp=sharing)
+The dataset used in this project is MORPH
 
 
 
